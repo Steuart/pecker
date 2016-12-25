@@ -1,5 +1,4 @@
 let nedb = require("../comm/nedb").getDb();
-let mysqlDb = require("../comm/mysql").getDb();
 let Rocket = require("../comm/rocket").Rocket;
 
 exports.getData=function(rocket){

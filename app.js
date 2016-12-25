@@ -5,7 +5,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const index = require('./routes/index');
-const db = require('./comm/nedb').getDb();
+require('./comm/nedb').getDb();
 const app = express();
 
 
