@@ -4,20 +4,13 @@ const router = express.Router();
 let test = require("../service/testService");
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
-});
+/*router.get('/', function(req, res, next) {
+    res.render('index.html', { title: 'Express' });
+});*/
 
-router.get('/test',(req,res,next)=>{
+router.post('/test.do',(req,res,next)=>{
     test.getData(res);
 });
 
-router.get('/login',(req,res,next)=>{
-    res.render('login',{});
-});
-
-router.get('/home',(req,res,next)=>{
-    res.render('home',{});
-});
 
 module.exports = router;
